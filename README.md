@@ -6,7 +6,7 @@ Proyecto EDA con Python
 
     1. Discrepancia entre las columnas reales / enunciado:
         
-        *Ref.:* **bank-additional.csv**
+        - *Ref.:* **bank-additional.csv**
 
         En el enunciado del proyecto, menciona las columnas "contact_month" y "contact_year"
         En el documento **.csv** facilitado, no existen esas columnas y en su lugar están "latitude" y "longitude".
@@ -21,8 +21,8 @@ Proyecto EDA con Python
 
     2. Headers **.CSV** y **.XLSX**
         
-        *Ref.:* **bank-additional.csv**
-        *Ref.:* **customer-details.xlsx**
+        - *Ref.:* **bank-additional.csv**
+        - *Ref.:* **customer-details.xlsx**
 
         1. Columna "id"
             
