@@ -16,13 +16,35 @@
         3.1.1. Identificación Hojas  
         3.1.2. Comprobación Columnas entre Hojas  
         3.1.3. Concatenación Hojas en DataFrame `df1`  
+
     3.2. Preparación Inicial `.CSV`  
         3.2.1. Transformación en DataFrame `df2`  
+
     3.3. Preparación para Unificar DataFrames con `.Merge()`  
         3.3.1. Identificación Columnas en DataFrames  
         3.3.2. Comprobación Duplicados en DataFrames  
-        3.3.3. Corrección Columnas en DataFrames
-        3.3.4. Creación Columnas `contact_month` y `contact_year`
+        3.3.3. Corrección Columnas en DataFrames  
+        3.3.4. Creación Columnas `contact_month` y `contact_year`  
+        3.3.5. Comprobación Dimensiones Tablas  
+        3.3.6. Unión de DataFrames  
+
+    3.4. Limpieza de Datos  
+        3.4.1. Comprobación Cantidad NaN por Columna
+        3.4.2. 
+        3.4.3. Limpieza Job
+
+4. **Analisis de Datos**
+    4.1. Clientes Suscritos  
+        4.1.1. Clasificación por Edad
+        4.1.2. Clientes Contactados Vs Suscritos
+            4.1.2.1. Gráfica Clientes Contactados
+            4.1.2.2. Gráfica Clientes Suscritos
+            4.1.2.3. Cálculo % de Contratación por Edad
+            4.1.2.4. Cálculo % de Contratación por Fecha
+
+    5.1. 
+
+        4.1.2.  
 
 
 ## Analisis Visual sobre el enunciado del ejercicio
@@ -39,7 +61,7 @@
 
         Para los datos "contact_month" y "contact_year", aprovecharé "date" que es la unión de ambos, procederé a crear dos columnas nuevas, con los nombres propuestos y en cada una colocaremos el dato correspondiente.
 
-## Analisis Durante el ejercicio
+## Limpieza y Preparación
 
 1. Puntos a Sanear
 
@@ -62,6 +84,8 @@
             2. Strip:
                 Para evitar problemas en el que si hay alguna columna con espacios antes/después del texto, y con ello, me genere problemas en las consultas, antes de unir con `pd.merge()` he realizado un `.str.strip()` de las columnas.
 
+
+## Conclusiones
 
 
 
