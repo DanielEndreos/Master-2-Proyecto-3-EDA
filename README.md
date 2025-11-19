@@ -2,11 +2,11 @@
 
 ## Estructura Proyecto
 1. Dependencias y configuración entorno
-    1. Librerias principales
-    2. Librerias gráficos
-    3. Otras Librerías
-    4. Customización del NoteBook
-    5. Direccionamiento Paths
+    1.1 Librerias principales
+    1.2. Librerias gráficos
+    1.3. Otras Librerías
+    1.4. Customización del NoteBook
+    1.5. Direccionamiento Paths
 
 2. Definición de Funciones
     1. `extraerElementoFecha(fecha, elemento)`
