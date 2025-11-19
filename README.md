@@ -21,7 +21,7 @@ Proyecto EDA con Python
 
     2. Headers **.CSV** y **.XLSX**
         
-        - *Ref.:* **bank-additional.csv**
+        - *Ref.:* [bank-additional.csv](https://github.com/DanielEndreos/Master-2-Proyecto-3-EDA/blob/main/DatosProyecto/bank-additional.csv)
         - *Ref.:* **customer-details.xlsx**
 
         1. Columna "id"
