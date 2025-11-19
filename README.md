@@ -1,15 +1,15 @@
 # Master 2º: Proyecto EDA con Python
 
 ## Estructura Proyecto
-1. Dependencias y configuración entorno
-    1.1 Librerias principales  
+1. Dependencias y configuración entorno  
+    1.1. Librerias principales  
     1.2. Librerias gráficos  
     1.3. Otras Librerías  
     1.4. Customización del NoteBook  
     1.5. Direccionamiento Paths  
 
 2. Definición de Funciones
-    1. `extraerElementoFecha(fecha, elemento)`
+    2.1. `extraerElementoFecha(fecha, elemento)`  
 
 ## Analisis Visual sobre el enunciado del ejercicio
 1. Puntos a Sanear
