@@ -1,5 +1,16 @@
 # Master 2º: Proyecto EDA con Python
 
+## Estructura Proyecto
+1. Dependencias y configuración entorno
+    1. Librerias principales
+    2. Librerias gráficos
+    3. Otras Librerías
+    4. Customización del NoteBook
+    5. Direccionamiento Paths
+
+2. Definición de Funciones
+    1. `extraerElementoFecha(fecha, elemento)`
+
 ## Analisis Visual sobre el enunciado del ejercicio
 1. Puntos a Sanear
 
@@ -12,13 +23,13 @@
 
         Para el analisis de los datos, vamos a obviar que hay un error en la documentación y utilizaremos las coordenadas en nuestro beneficio.
 
-        Para los datos "conctact_month" y "contact_year", aprovecharé "date" que es la unión de ambos, procederé a crear dos columnas nuevas, con los nombres propuestos y en cada una colocaremos el dato correspondiente.
+        Para los datos "contact_month" y "contact_year", aprovecharé "date" que es la unión de ambos, procederé a crear dos columnas nuevas, con los nombres propuestos y en cada una colocaremos el dato correspondiente.
 
 ## Analisis Durante el ejercicio
 
 1. Puntos a Sanear
 
-    2. Headers **.CSV** y **.XLSX**
+    1. Headers **.CSV** y **.XLSX**
         
         - *Ref.:* [bank-additional.csv](https://github.com/DanielEndreos/Master-2-Proyecto-3-EDA/blob/main/DatosProyecto/bank-additional.csv)
         - *Ref.:* [customer-details.xlsx](https://github.com/DanielEndreos/Master-2-Proyecto-3-EDA/blob/main/DatosProyecto/customer-details.xlsx)
@@ -32,15 +43,11 @@
         2. Columnas
             
             1. Lower Case:
-                Para evitar problemas con el case sensitive, he decidido llevar todos los textos de los títulos a minusculas mediante `lower()`.
+                Para evitar problemas con el case sensitive, he decidido llevar todos los textos de los títulos a minusculas mediante `.str.lower()`.
 
             2. Strip:
                 Para evitar problemas en el que si hay alguna columna con espacios antes/después del texto, y con ello, me genere problemas en las consultas, antes de unir con `pd.merge()` he realizado un `.str.strip()` de las columnas.
 
 
-
-        
-    
-    Se observa que ambos archivos, tanto el **.CSV** como el **.XLSX** tienen una columna principal sin nombre
 
 
