@@ -1,7 +1,7 @@
 # Master 2º: Proyecto EDA con Python
 
-## Estructura Proyecto
-1. **Dependencias y Configuración Entorno**
+## Estructura NoteBook
+1. **Dependencias y Configuración Entorno**  
     1.1. Librerías Principales  
     1.2. Librerías Gráficos  
     1.3. Otras Librerías  
@@ -11,8 +11,19 @@
 2. **Definición de Funciones**  
     2.1. Función `extraerElementoFecha(fecha, elemento)`  
 
-3. **Procesamiento de Archivos**
-    3.1. Procesamiento del Archivo `.XLSX`
+3. **Procesamiento de Archivos**  
+    3.1. Preparación Inicial `.XLSX`  
+        3.1.1. Identificación Hojas  
+        3.1.2. Comprobación Columnas entre Hojas  
+        3.1.3. Concatenación Hojas en DataFrame `df1`  
+    3.2. Preparación Inicial `.CSV`  
+        3.2.1. Transformación en DataFrame `df2`  
+    3.3. Preparación para Unificar DataFrames con `.Merge()`  
+        3.3.1. Identificación Columnas en DataFrames  
+        3.3.2. Comprobación Duplicados en DataFrames  
+        3.3.3. Corrección Columnas en DataFrames
+        3.3.4. Creación Columnas `contact_month` y `contact_year`
+
 
 ## Analisis Visual sobre el enunciado del ejercicio
 1. Puntos a Sanear
