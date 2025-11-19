@@ -1,5 +1,4 @@
-# Master-2-Proyecto-3-EDA
-Proyecto EDA con Python
+# Master 2º: Proyecto EDA con Python
 
 ## Analisis Visual sobre el enunciado del ejercicio
 1. Puntos a Sanear
