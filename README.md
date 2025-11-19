@@ -26,17 +26,17 @@ Proyecto EDA con Python
 
         1. Columna "id"
             
-            En ambos documentos se nombra de manera distinta, eso es un problema a la hora de realizar un *pd.merge()* entre ambos archivos. Ya que necesitamos un punto de unión entre archivos y el mejor punto de unión es la "id" ya que es la relación entre ambos documentos, no podemos utilizar la supuesta "PK" ya que podrían estar introducidos en otro orden.
+            En ambos documentos se nombra de manera distinta, eso es un problema a la hora de realizar un `pd.merge()` entre ambos archivos. Ya que necesitamos un punto de unión entre archivos y el mejor punto de unión es la "id" ya que es la relación entre ambos documentos, no podemos utilizar la supuesta "PK" ya que podrían estar introducidos en otro orden.
 
             Es por ello, que modificaré el nombre de esta columna a "id" para mantener la relación de textos con las demás cabeceras.
 
         2. Columnas
             
             1. Lower Case:
-                Para evitar problemas con el case sensitive, he decidido llevar todos los textos de los títulos a minusculas mediante lower().
+                Para evitar problemas con el case sensitive, he decidido llevar todos los textos de los títulos a minusculas mediante `lower()`.
 
             2. Strip:
-                Para evitar problemas en el que si hay alguna columna con espacios antes/después del texto, y con ello, me genere problemas en las consultas, antes de unir con *pd.merge()* he realizado un *.str.strip()* de las columnas.
+                Para evitar problemas en el que si hay alguna columna con espacios antes/después del texto, y con ello, me genere problemas en las consultas, antes de unir con `pd.merge()` he realizado un `.str.strip()` de las columnas.
 
 
 
