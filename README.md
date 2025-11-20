@@ -29,9 +29,10 @@
         * 3.3.6  Unión de DataFrames  
 
     * 3.4 Limpieza de Datos  
-        * 3.4.1  Comprobación Cantidad NaN por Columna  
-        * 3.4.2
-        * 3.4.3  Limpieza Job  
+        * 3.4.1  Comprobación Columnas (NaN, Tipo Dato)  
+        * 3.4.2  Creación Copia antes de Limpieza Datos
+        * 3.4.3  Corrección Tipos de Dato
+        * 3.4.4  Busqueda correlación entre `euribor3m` y `emp.var.rate`
 
 * 4 - **Analisis de Datos**
     * 4.1 Clientes Suscritos  
