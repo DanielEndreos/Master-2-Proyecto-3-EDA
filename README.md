@@ -36,11 +36,11 @@
 4. **Analisis de Datos**
     4.1. Clientes Suscritos  
         4.1.1. Clasificación por Edad  
-        4.1.2. Clientes Contactados Vs Suscritos  
-            4.1.2.1. Gráfica Clientes Contactados  
-            4.1.2.2. Gráfica Clientes Suscritos  
-            4.1.2.3. Cálculo % de Contratación por Edad  
-            4.1.2.4. Cálculo % de Contratación por Fecha  
+        4.1.2. Clientes Contactados Vs Suscritos   
+            4.1.2.1. Gráfica Clientes Contactados   
+            4.1.2.2. Gráfica Clientes Suscritos   
+            4.1.2.3. Cálculo % de Contratación por Edad   
+            4.1.2.4. Cálculo % de Contratación por Fecha   
 
     5.1. 
 
