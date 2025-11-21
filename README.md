@@ -48,6 +48,7 @@
             * 4.3.1.1  Gráfica Clientes Contactados   
             * 4.3.1.2  Gráfica Clientes Suscritos   
             * 4.3.1.3  Cálculo % de Contratación por Edad   
+
         * 4.3.2  Análisis Clientes Sucritos   
             * 4.3.2.1  Criterio Por Trabajo   
             * 4.3.2.2  Criterio Por Estado Civil   
@@ -125,11 +126,12 @@
 
 En el punto `4.2 Éxito Por Campaña` observamos claramente que la variación del `euribor3m` ha repercutido en la cantidad de suscripciones, según subía el valor del `euribor3m` disminuian las suscripciones, y observamos como hay dos momentos en el que el `euribor3m` desciende un poco y vuelven a generarse más suscripciones.
 
-En el punto `4.3 Clientes Suscritos`, observamos que:  
-    - La mayor cantidad de contrataciones está en una edad comprendida entre los 20 y los 60 años.  
-    - Los clientes que más se suscriben son `students` y `retired`
-    - El estado `marital`, `education`, `housing`, `loan` no afecta a la decisión de la contratación.
+En el punto `4.3 Clientes Suscritos`, observamos que:   
 
-Vamos, en conclusión, los clientes son más atraídos al producto cuando el `euribor3m` desciende.
+    - La mayor cantidad de contrataciones está en una edad comprendida entre los 20 y los 60 años.  
+    - Los clientes que más se suscriben son `students` y `retired`  
+    - El estado `marital`, `education`, `housing`, `loan` no afecta a la decisión de la contratación.  
+
+En conclusión, los clientes son más atraídos al producto cuando el `euribor3m` desciende.
     
 
