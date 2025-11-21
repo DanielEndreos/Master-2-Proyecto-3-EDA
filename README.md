@@ -37,15 +37,24 @@
     * 3.5 Exportación Datos a Excel
 
 * 4 - **Analisis de Datos**
-    * 4.1 Clientes Suscritos  
-        * 4.1.1  Clasificación por Edad  
-        * 4.1.2  Clientes Contactados Vs Suscritos   
-            * 4.1.2.1  Gráfica Clientes Contactados   
-            * 4.1.2.2  Gráfica Clientes Suscritos   
-            * 4.1.2.3  Cálculo % de Contratación por Edad   
-            * 4.1.2.4  Cálculo % de Contratación por Fecha  
+    * 4.1 Descripción Datos
 
-
+    * 4.2 Éxito Por Campaña
+        * 4.2.1  Tabla Datos
+        * 4.2.2  Gráfica
+          
+    * 4.3 Clientes Suscritos  
+        * 4.3.1  Clientes Contactados Vs Suscritos   
+            * 4.3.1.1  Gráfica Clientes Contactados   
+            * 4.3.1.2  Gráfica Clientes Suscritos   
+            * 4.3.1.3  Cálculo % de Contratación por Edad   
+        * 4.3.2  Análisis Clientes Sucritos   
+            * 4.3.2.1  Criterio Por Trabajo   
+            * 4.3.2.2  Criterio Por Estado Civil   
+            * 4.3.2.3  Criterio Por Estudios  
+            * 4.3.2.4  Criterio Por Estar Hipotecado   
+            * 4.3.2.5  Criterio Por Estar Endeudado   
+            * 4.3.2.6  Criterio Por Número Visitas Web
 
 ## Analisis Visual sobre el enunciado del ejercicio
 1. Puntos a Sanear
@@ -97,9 +106,9 @@
                 
                 Este apartado ha sido complicado, muchas horas pensando cual es el mejor proposito. Al final he decidido hacer lo siguiente:
 
-                Para la edad he determinado que lo mejor es poner un valor `0` como `no definido`.
-                Para los columnas `age`, `default` y `loan`, he asignado un valor `2` como `desconocido`.
-                Para las columnas `job`, `marital` y `education`, he asignado un valor de `unknown`.
+                Para los valores `age`, `default` y `loan` he decidido dejarlo como NaN, ya que me afectaban a la hora de utilizar la funcion `.describe().T`  
+                  
+                Para las columnas `job`, `marital` y `education`, he asignado un valor de `unknown`.  
 
                 En el caso del `euribor3m`, he visto una gran relación entre la posición del indice junto con los valores `emp.var.rate`, `cons.price.idx` y `cons.conf.idx`.
                 
@@ -114,5 +123,13 @@
 
 ## Conclusiones
 
+En el punto `4.2 Éxito Por Campaña` observamos claramente que la variación del `euribor3m` ha repercutido en la cantidad de suscripciones, según subía el valor del `euribor3m` disminuian las suscripciones, y observamos como hay dos momentos en el que el `euribor3m` desciende un poco y vuelven a generarse más suscripciones.
 
+En el punto `4.3 Clientes Suscritos`, observamos que:  
+    - La mayor cantidad de contrataciones está en una edad comprendida entre los 20 y los 60 años.  
+    - Los clientes que más se suscriben son `students` y `retired`
+    - El estado `marital`, `education`, `housing`, `loan` no afecta a la decisión de la contratación.
+
+Vamos, en conclusión, los clientes son más atraídos al producto cuando el `euribor3m` desciende.
+    
 
