@@ -30,9 +30,11 @@
 
     * 3.4 Limpieza de Datos  
         * 3.4.1  Comprobación Columnas (NaN, Tipo Dato)  
-        * 3.4.2  Creación Copia antes de Limpieza Datos
-        * 3.4.3  Corrección Tipos de Dato
-        * 3.4.4  Busqueda correlación entre `euribor3m` y `emp.var.rate`
+        * 3.4.2  Creación Copia antes de Limpieza Datos  
+        * 3.4.3  Corrección Tipos de Dato  
+        * 3.4.4  Busqueda correlación entre `euribor3m` y `emp.var.rate`  
+
+    * 3.5 Exportación Datos a Excel
 
 * 4 - **Analisis de Datos**
     * 4.1 Clientes Suscritos  
@@ -57,7 +59,7 @@
 
         Para el analisis de los datos, vamos a obviar que hay un error en la documentación y utilizaremos las coordenadas en nuestro beneficio.
 
-        Para los datos "contact_month" y "contact_year", aprovecharé "date" que es la unión de ambos, procederé a crear dos columnas nuevas, con los nombres propuestos y en cada una colocaremos el dato correspondiente.
+        Para los datos "contact_month" y "contact_year", aprovecharé "date" que es la unión de ambos, procederé a crear esas dos columnas nuevas, con los nombres propuestos y en cada una colocaremos el dato correspondiente. También aprovechó para sacar el día. Tres columnas en total.
 
 ## Limpieza y Preparación
 
@@ -81,6 +83,33 @@
 
             2. Strip:
                 Para evitar problemas en el que si hay alguna columna con espacios antes/después del texto, y con ello, me genere problemas en las consultas, antes de unir con `pd.merge()` he realizado un `.str.strip()` de las columnas.
+
+        3. Datos
+
+            Tras realizar la correcta unión entre las tablas, procedo a realizar lo siguiente:
+
+            1. Corrigo los tipos de datos:
+                1. `Object -> Float`:  En las String que deberían ser Float, cambio la `,` por el `.`.
+                2. `Object -> Int`: En los datos que deberían ser INT, los transformo.
+                3. `Object -> Fechas`: Aquí me he complicado un poco la existencia, pero las dos fechas que existen `date` y `dt_customer`, las he dejado en formato date.
+
+            2. Relleno Huecos Vacíos
+                
+                Este apartado ha sido complicado, muchas horas pensando cual es el mejor proposito. Al final he decidido hacer lo siguiente:
+
+                Para la edad he determinado que lo mejor es poner un valor `0` como `no definido`.
+                Para los columnas `age`, `default` y `loan`, he asignado un valor `2` como `desconocido`.
+                Para las columnas `job`, `marital` y `education`, he asignado un valor de `unknown`.
+
+                En el caso del `euribor3m`, he visto una gran relación entre la posición del indice junto con los valores `emp.var.rate`, `cons.price.idx` y `cons.conf.idx`.
+                
+                Cómo son muchos los datos faltantas (9256), he decidido usar esa relación que he visto para rellenar la mayoría de ellos. Para ello he realizado un grupo de las tres condiciones que pienso son relacionales, y he rellenado anterior y posteriormente el euribor segun los datos previos y posteriores al mismo.
+
+                Esto ha reducido los campos vacíos a 471, ya que `cons.price.idx` tenía el mismo gap.
+
+                Tanto para los valores de `euribor3m` y `cons.price.idx` restantes, he procedido a rellenar los campos según los datos anteriores y posteriores.
+
+                Pienso que en el fondo, no se debería nunca rellenar un dato que no sabemos a ciencia cierta que es certero, pero la relación es tan fuerte que creo que el dato debe ser el correspondiente, o muy proximo a el. Y estos datos son interesantes para el resultado del informe.
 
 
 ## Conclusiones
